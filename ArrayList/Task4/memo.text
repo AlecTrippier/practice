@@ -1,0 +1,16 @@
+HashMap1
+
+mainメソッドにて、キー及び要素がString型のMap型の変数の宣言、HashMapのインスタンス生成を行い、以下のように値を格納しなさい。
+
+// 以下の3つを宣言すること
+変数名:dogDetails
+"name" => "コタロー"
+"type" => "ブルテリア"
+
+変数名:catDetails
+"name" => "コジロー"
+"type" => "マンチカン"
+
+変数名:hamsterDetails
+"name" => "ハムタロー"
+"type" => "キンクマ" 
