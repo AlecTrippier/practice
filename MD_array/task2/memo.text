@@ -1,0 +1,29 @@
+/** 以下4行はファイル最上部に記述すること */
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+
+
+/** 以下はmainメソッド内に記述すること */
+List<String> wagashi = new ArrayList<String>();
+wagashi.add("みたらし団子");
+wagashi.add("ういろう");
+wagashi.add("せんべい");
+wagashi.add("羊羹");
+
+List<String> yogashi = new ArrayList<String>();
+yogashi.add("ショートケーキ");
+yogashi.add("プリン");
+yogashi.add("シュークリーム");
+yogashi.add("クッキー");
+yogashi.add("マシュマロ");
+yogashi.add("チョコレート");
+
+Map<String, List<String>> sweets = new HashMap<String, List<String>>();
+sweets.put("和菓子", wagashi);
+sweets.put("洋菓子", yogashi);
+
+練習問題-2
+
+sweetsを利用して、 「クッキー」 という文字列を出力しなさい。
