@@ -1,0 +1,7 @@
+mainメソッドにて、String型を格納するList型の変数としてanimalListを宣言し、ArrayListのインスタンス生成を行い, 次の値を格納しなさい。
+
+格納する値)
+
+dog
+cat
+mouse
