@@ -1,0 +1,23 @@
+以下の配列をmainメソッド内に宣言しなさい。
+
+String[] teamList = {
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+};
+
+配列の各要素を1つのチームとし、以下のような総当り表を出力しなさい。
+
+チームが追加されたり削除されても問題なく表示されるようにすること。
+
+勝敗は考えなくて良い。
+
+出力内容)
+
+|NoBattle| A vs B | A vs C | A vs D | A vs E |
+| B vs A |NoBattle| B vs C | B vs D | B vs E |
+| C vs A | C vs B |NoBattle| C vs D | C vs E |
+| D vs A | D vs B | D vs C |NoBattle| D vs E |
+| E vs A | E vs B | E vs C | E vs D |NoBattle|
