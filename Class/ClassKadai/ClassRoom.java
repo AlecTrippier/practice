@@ -17,6 +17,16 @@ class ClassRoom {
     // クラス番号
     private int classNumber = 1;
 
+    // 練習問題-3
+
+    public void setStudents() {
+        for (int i = 0; i < this.studentNames.length; i++) {
+            Student student = new Student();
+            student.setName(this.studentNames[i]);
+            this.students.put(i + 1, student);
+        }
+    }
+
     /**
      * 主担任をセットする
      */
@@ -31,7 +41,10 @@ class ClassRoom {
      * 副担任をセットする
      */
     public void setSubTeacher() {
-
+        Teacher subTeacher = new Teacher();
+        subTeacher.setName("佐々木一郎");
+        subTeacher.setSubject("数学");
+        this.teachers.put("副担任", subTeacher);
     }
 
     /**

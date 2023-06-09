@@ -20,4 +20,6 @@ class Student {
         System.out.println(this.name);
 
     }
+
+   
 }
