@@ -1,0 +1,24 @@
+Task6までで宣言してきたanimalListの値と、各動物の詳細のHashMapを適切に組み合わせて、一つのHashMapにまとめたい。
+
+以下のイメージを参考に、キーがString型、要素がHashMapの構造になるように宣言を行いなさい。
+
+なお、HashMapはanimalDetailsという名称の変数に代入すること。
+
+※確認方法：System.out.print()を利用して、animalDetailsの状態を出力することで確認が可能
+
+イメージ)
+
+{
+    "dog" => {
+        "name" => "コタロー"
+        "type" => "ボルゾイ"
+    },
+    "cat" => {
+        "name" => "コジロー"
+        "type" => "マンチカン"
+    },
+    "hamster" => {
+        "name" => "ハムタロー"
+        "type" => "キンクマ"
+    },
+}
