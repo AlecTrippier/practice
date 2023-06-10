@@ -1,0 +1,38 @@
+文字列から重複文字が存在するかをチェックせよ
+
+ある文字列を成している文字一つ一つが全てユニークである(重複する文字が存在しない)かどうかを判定するアルゴリズムを実装したメソッドを作成してください。
+
+メソッドは以下の表を基に作成すること。
+
+関数名：isUniqueChars
+
+仮引数：(String) str
+
+返り値：(boolean)
+
+条件
+
+文字コードはASCII文字(7バイト)限定
+
+(参考) ASCIIコード表 - https://www.k-cube.co.jp/wakaba/server/ascii_code.html
+
+配列以外の新たなデータ構造は使用不可
+
+java.util.HashSetやjava.util.LinkedHashSetなどの他コレクションクラスは使用不可
+
+文字列をソートしてはならない
+
+ASCIIでなくUnicode指定だった場合に計算量が膨大にならない処理を心がける
+
+
+実行例
+
+public class Kadai001 {
+
+    public static void main(String[] args) {
+        String str = "abcadefg";
+        System.out.println(isUniqueChars(str));
+    }
+
+    /* ここにisUniqueCharsメソッドを定義 */
+}
