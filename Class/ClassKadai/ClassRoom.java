@@ -1,6 +1,15 @@
 import java.util.HashMap;
 
 class ClassRoom {
+
+    // 練習問題6
+    private ClassRoom() {
+        setStudents();
+        setMainTeacher();
+        setSubTeacher();
+       
+    }
+
     // <出席番号 Student型>
     private HashMap<Integer, Student> students = new HashMap<Integer, Student>();
 
