@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class ClassRoom {
     // <出席番号 Student型>
     private HashMap<Integer, Student> students = new HashMap<Integer, Student>();
@@ -17,8 +19,9 @@ class ClassRoom {
     // クラス番号
     private int classNumber = 1;
 
-    // 練習問題-3
-
+    /**
+     * 練習問題-3
+     */
     public void setStudents() {
         for (int i = 0; i < this.studentNames.length; i++) {
             Student student = new Student();
@@ -41,6 +44,9 @@ class ClassRoom {
      * 副担任をセットする
      */
     public void setSubTeacher() {
+        /**
+         * 練習問題-2
+         */
         Teacher subTeacher = new Teacher();
         subTeacher.setName("佐々木一郎");
         subTeacher.setSubject("数学");
@@ -51,6 +57,22 @@ class ClassRoom {
      * クラス名簿を出力する
      */
     public void showClassRoom() {
-
+        /**
+         * 練習問題-4
+         */
+        System.out.println("------------------------------------");
+        System.out.println(this.grade + "年" + this.classNumber + "組 クラス名簿");
+        System.out.println("------------------------------------");
+        this.teachers.forEach((key, teacher) -> {
+            System.out.print(key + " ");
+            teacher.showTeacherInformation();
+        });
+        System.out.println("------------------------------------");
+        System.out.println("生徒一覧");
+        this.students.forEach((key, student) -> {
+            System.out.print(key + ". ");
+            student.showName();
+        });
+        System.out.println("------------------------------------");
     }
 }
