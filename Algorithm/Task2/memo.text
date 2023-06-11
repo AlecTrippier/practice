@@ -1,0 +1,45 @@
+特殊な文字列比較をせよ
+
+２つの文字列が与えられた時、一方がもう一方の並び替えになっているかを検査するメソッドを作成してください。
+
+メソッドは以下の表を基に作成すること。
+
+関数名:permutation
+
+仮引数1:(String) s
+
+仮引数1:(String) t
+
+返り値:(boolean)
+
+
+条件
+
+・大文字・小文字は区別すること
+
+「dog」と「God」は違う
+
+・空白文字も意味があるものとみなすこと
+
+「dog」と「g o d」は違う
+
+・入力値はASCII文字(7バイト)を前提として良い
+
+複数解法はあるので、余裕があれば別のアプローチでの解法も検討してみてください。
+
+実行例
+
+public class Kadai002 {
+
+    public static void main(String[] args) {
+        String str1 = "god";
+        String str2 = "dog";
+        System.out.println(permutation(str1, str2));
+    }
+
+    /* ここにpermutationメソッドを定義 */
+}
+
+出力結果
+
+true
