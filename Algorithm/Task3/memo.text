@@ -1,0 +1,42 @@
+２つの文字列「s1」と「s2」が与えられた時、isSubstring()メソッドを一度だけ使ってs2がs1を「回転」させたものかどうかを判定するメソッドを作成してください。
+
+「回転」の例
+
+・「Cdefgab」は「abCdefg」を回転させたもの
+
+・「abCdefg」の「ab」の後から回転
+
+・「fishbanana」は「bananafish」を回転させたもの
+
+・「bananafish」の「banana」の後から回転
+
+・「erbottlewat」は「waterbottle」を回転させたもの
+
+・「waterbottle」の「wat」の後から回転
+
+メソッドは以下の表を基に作成すること。
+
+関数名：isRotation
+
+仮引数1：(String) s
+
+仮引数2：(String) t
+
+返り値：(boolean)
+
+実行例
+
+public class Kadai003 {
+
+    public static void main(String[] args) {
+        String str1 = "waterbottle";
+        String str2 = "erbottlewat";
+        System.out.println(isRotation(str1, str2));
+    }
+
+    public static boolean isSubstring(String s1, String s2) {
+        return s1.matches(".*" + s2 + ".*$");
+    }
+
+    /* ここにisRotationメソッドを定義 */
+}
